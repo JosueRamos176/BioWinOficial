@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="5dp"
+        android:background="#3752E8"
+        android:onClick="Admin"
+        android:text="Administracion"
+        android:textColor="#3752E8" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="BioWIN"
+        android:textColor="#4CAF50"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/alfa_slab_one" />
+
+    <TextView
+        android:id="@+id/bienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="bienvenid@"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_at"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="50dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_lock_question"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="30dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/botones"
+        android:onClick="loginUserAccount"
+        android:padding="10dp"
+        android:text="Iniciar Sesión"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/registro"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/botones2"
+        android:onClick="Registrarse"
+        android:text="Registro"
+        android:textColor="#FFFFFF" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:visibility="gone" />
+</LinearLayout>
